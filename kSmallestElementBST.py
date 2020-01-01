@@ -1,7 +1,6 @@
 import treeNode
 def kthSmallest(root, k):
     i = 0
-
     def helper(root, k):
         nonlocal i
         if not root:

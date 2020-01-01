@@ -21,5 +21,5 @@ def minRemove(s):
 
     return "".join(ret)
 
-s = "lee(t(c)o)d(e(e"
+s = "lee(t(c)o)d)e)e(("
 print(minRemove(s))

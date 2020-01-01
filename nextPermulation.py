@@ -15,5 +15,5 @@ def nextPermute(nums):
                     return
     swap(0, n - 1)
 
-nums = [8, 6, 4, 1]
+nums = [2, 4, 6, 7, 2, 5, 8, 7, 3]
 print(nextPermute(nums))

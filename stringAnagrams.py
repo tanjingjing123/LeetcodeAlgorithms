@@ -1,0 +1,1 @@
+def mostFrequentAnagrams(strings):

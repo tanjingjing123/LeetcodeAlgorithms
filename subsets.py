@@ -2,9 +2,11 @@
 def subsets(nums):
     res = [[]]
     for i in range(len(nums)):
-        res += [seq + [nums[i]] for seq in res]
+        tmp = res[::]
+        for seq in tmp:
+            res.append(seq + [nums[i]])
     return res
 
-nums = [1,2,3,4]
+nums = ['John', 'Amy', 'Vincent']
 print(subsets(nums))
 

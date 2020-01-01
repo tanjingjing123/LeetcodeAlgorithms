@@ -21,6 +21,7 @@ def courseOverlap(coursePairs):
     return result
 
 
+
 coursePairs = [
     ['58', 'software design'],
     ['58', 'linear algebra'],

@@ -2,19 +2,22 @@ import collections
 
 import treeNode
 def findleaves(root):
-    def helper(node, level, res):
+    res = collections.defaultdict(list)
+    def dfs(node, level, res):
+        if not node:
+            return 0
+
         leftlevel, rightlevel = 0, 0
         if node.left:
-            leftlevel = max(helper(node.left, level, res), 0)
+            leftlevel = max(dfs(node.left, level, res), 0)
         if node.right:
-            rightlevel = max(helper(node.right, level, res), 0)
+            rightlevel = max(dfs(node.right, level, res), 0)
 
         level = max(leftlevel, rightlevel)
         res[level].append(node.val)
         return level + 1
-    res = collections.defaultdict(list)
-    helper(root, -1, res)
-    return (res.values())
+    dfs(root, -1, res)
+    return list(res.values())
 
 
 

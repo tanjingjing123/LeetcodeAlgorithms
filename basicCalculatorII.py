@@ -30,5 +30,5 @@ def calculate(s):
         operator = ch
 
     return sum(stack)
-s = "3/2"
+s = "3 + 22 * 61 - 290 + 122 / 4"
 print(calculate(s))

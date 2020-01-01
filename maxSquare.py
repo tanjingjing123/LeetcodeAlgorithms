@@ -14,5 +14,5 @@ def maxSquare(matrix):
                 max_side = max(max_side, dp[r+1][c+1])
     return max_side * max_side
 
-matrix = [[1,1,0,0,0],[1,1,1,1,1],[0,1,1,1,1],[0,1,1,1,1],[0,0,1,0,1]]
+matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 print(maxSquare(matrix))
