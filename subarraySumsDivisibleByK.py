@@ -13,6 +13,7 @@ def subarrayDivByK(A, K):
         memo[res % K] += 1
     return count
 
+
 A = [4, 5, 0, -2, -3, 1]
 K = 5
 print(subarrayDivByK(A, K))
