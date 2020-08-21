@@ -11,6 +11,6 @@ def subarraySum(nums, k):
         hm[sum] += 1
     return count
 
-nums = [1]
-k = 0
+nums = [2, 4, 3, 1, 2, 4, 5, 1]
+k = 6
 print(subarraySum(nums, k))

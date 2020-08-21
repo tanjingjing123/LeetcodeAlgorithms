@@ -3,7 +3,6 @@ from collections import deque
 def trap(height):
     q = deque()
     higher_height = 0
-    smaller_height = 0
     res = 0
     for num in height:
         if num >= higher_height:

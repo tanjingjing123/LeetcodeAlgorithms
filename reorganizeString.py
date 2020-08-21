@@ -19,5 +19,5 @@ def reorganizeString(s):
 
     return ans if not last else ''
 
-s = 'aaceebdffbbe'
+s = 'aaabab'
 print(reorganizeString(s))
